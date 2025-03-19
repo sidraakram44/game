@@ -75,15 +75,17 @@ const TicTocToe = () => {
     else{
       titleRef.current.innerHTML=`Congratulations: <img src=${zero}>`
     }
-    const reset=()=>{
-      setLock(false);
-      data = ["", "", "", "", "", "", "", "", ""];
-      titleRef.current.innerHTML='Tic Tac Toe in <span>React</span>'
-      box_array.map((e)=>{
-        e.current.innerHTML="";
-      })
-    }
+    
   }
+  const reset =()=>{
+    setLock(false)
+    data=["","","","","","","","",""];
+    titleRef.current.innerHTML=`tic tac toe in <span> Reset<span>`
+    box_array.map((e)=>{
+        e.current.innerHTML="";
+    })
+
+}
   return (
     <div className='container'>
       <h1 className="title" ref={titleRef}>Tic Tac Toe Game in <span>React</span></h1>
@@ -104,9 +106,9 @@ const TicTocToe = () => {
           <div className="boxes" ref={box9}onClick={(e) => (toggle(e, 8))}></div>
         </div>
       </div>
-      <button className="reset">Reset</button>
+      <button className="reset" onClick={()=>{reset()}}>Reset</button>
     </div>
   )
 }
 
-export default TicTocToe
+export default TicTocToe;
