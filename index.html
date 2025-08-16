@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YourSite — Modern Starter</title>
+  <meta name="description" content="A clean, fast, responsive website starter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'><rect width='256' height='256' rx='48' fill='%230f172a'/><path d='M64 144l32 32 96-96' stroke='%23fff' stroke-width='24' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+  <meta property="og:title" content="YourSite — Modern Starter">
+  <meta property="og:description" content="A clean, fast, responsive website starter.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">◆</span>
+        <span class="brand-name">YourSite</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul id="primary-nav" class="nav-list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-sm" href="#get-started">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Build something great</h1>
+          <p>Create a fast, accessible website with a clean foundation you can customize.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#features">Explore Features</a>
+            <a class="btn btn-ghost" href="#contact">Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <div class="hero-card">
+            <div class="hero-card-badge">New</div>
+            <div class="hero-card-title">Beautiful Starter</div>
+            <div class="hero-card-body">Responsive layout, accessible components, and modern styles.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Features</h2>
+        <div class="features-grid">
+          <article class="feature">
+            <div class="feature-icon">⚡</div>
+            <h3>Fast</h3>
+            <p>Lightweight HTML, CSS, and vanilla JS. No build step required.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">🔒</div>
+            <h3>Accessible</h3>
+            <p>Semantic markup and keyboard-friendly interactions out of the box.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">🎨</div>
+            <h3>Customizable</h3>
+            <p>Easy to tweak styles and components to match your brand.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2>About</h2>
+        <p>This starter gives you a solid foundation, so you can focus on your content and product. Replace sections as needed.</p>
+      </div>
+    </section>
+
+    <section id="get-started" class="section">
+      <div class="container">
+        <h2>Get started</h2>
+        <ol class="steps">
+          <li>Edit the text in this page to match your brand.</li>
+          <li>Customize colors in styles.css.</li>
+          <li>Deploy to any static host.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <form class="contact-form" name="contact" netlify>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Ada Lovelace" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="How can we help?"></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> YourSite. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
